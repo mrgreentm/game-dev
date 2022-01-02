@@ -5,6 +5,20 @@
     border: none;
 }
 
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(111, 125, 251, 1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(38, 48, 140, 1);
+    border-radius: 20px;
+    border: 3px solid rgba(38, 48, 140, 1);
+}
+
 .top-home {
     padding: 2rem;
     background: linear-gradient(180deg, rgba(111, 125, 251, 1) 0%, rgba(38, 48, 140, 1) 35%);
@@ -113,22 +127,26 @@
     margin-left: 40px;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .comment-card {
     margin-top: 4.438rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    position: absolute;
-    width: 285px;
-    height: 199px;
-    background: transparent;
+    position: sticky;
+    width: 265px;
+    background: #ffffff;
     box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
 }
 
 .title-card {
     position: absolute;
-    width: 270px;
+    width: 265px;
     background-color: #6F7DFB;
     color: #ffffff;
     font-weight: bold;
@@ -141,9 +159,185 @@
 }
 
 .profile-data {
-    width: 350px;
-    height: 97px;
     background-color: #ffffff;
     border-radius: 24px;
     padding: 5px 1px 5px 10px;
+}
+
+.name {
+    font-size: 18px;
+    line-height: 120%;
+    color: #023047;
+    padding-top: 1rem;
+}
+
+.personal {
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    color: #023047;
+    padding-top: 1rem;
+}
+
+.card {
+    padding: 10px 0 10px 10px;
+    display: flex;
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.image {
+    margin: -1rem 0 0 1.5rem;
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+}
+
+.image-joao {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: -1rem 0 0 1.5rem;
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.6);
+}
+
+.title-card-2 {
+    position: absolute;
+    width: 265px;
+    background-color: #DA722C;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 5px 1px 5px 10px;
+}
+
+.name-2 {
+    font-size: 18px;
+    line-height: 120%;
+    color: #023047;
+    padding-top: 2.5rem;
+}
+
+.button {
+    padding: 12px 32px;
+    width: 155px;
+    height: 48px;
+    background: #DA722C;
+    border-radius: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: .9rem;
+    margin-top: 90px;
+    margin-left: 110px;
+}
+
+.courses-container {
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    text-align: center;
+}
+
+.courses-container h1 {
+    padding: 3.938rem 2rem 3.938rem 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.course-card {
+    width: 320px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 26px;
+    margin: auto auto 3.75rem auto;
+}
+
+.image-course {
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    border-radius: 24px;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.data-course {
+    padding: 0 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #023047;
+    font-weight: bold;
+}
+
+.blue-bar {
+    width: 250px;
+    height: 8px;
+    background: #023047;
+    border-radius: 24px;
+    margin: auto;
+}
+
+.btn-3 {
+    padding: 12px 32px;
+    width: 171px;
+    height: 48px;
+    background: #DA722C;
+    border-radius: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 85px;
+    margin-bottom: 2rem;
+}
+
+.get-app-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.get-app-container h1 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    color: #023047;
+}
+
+.get-app-container p {
+    color: #023047;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.plataforms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 31px;
+    background: #000000;
+    color: #ffffff;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    background-color: #070917;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer h2 {
+    color: #DA722C;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    gap: 10px;
+}
+
+.links a {
+    color: #ffffff;
 }
