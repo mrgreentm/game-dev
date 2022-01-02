@@ -11,10 +11,16 @@
 
 <body>
     <div class="container">
+        <div id="menu" class="open-menu">
+            <div class="close" onclick="closeMenu()">X</div>
+            <a href="">About Us</a>
+            <a href="">Services</a>
+            <a href="">Works</a>
+        </div>
         <div class="top-home">
             <div class="menu">
                 <p>GD.</p>
-                <div class="hamburger">=</div>
+                <div onclick="openMenu()" class="hamburger">=</div>
             </div>
             <div class="data">
                 <h1>Learn the art of Game Dev</h1>
@@ -123,6 +129,8 @@
             </div>
         </div>
     </div>
+    <script src="./index.js"></script>
+
 </body>
 
 </html>

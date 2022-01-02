@@ -43,6 +43,39 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
 }
 
+.open-menu {
+    width: 100vw;
+    height: 60px;
+    background-color: #070917;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    visibility: hidden;
+    transition: height 0.5s;
+}
+
+.openned {
+    visibility: visible;
+    transition: height 0.5s;
+    height: 600px;
+}
+
+.close {
+    color: white;
+    align-self: flex-end;
+    padding-right: 10px;
+}
+
+.open-menu a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 .data {
     font-family: system-ui, Roboto;
     color: #ffffff;
